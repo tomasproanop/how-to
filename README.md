@@ -1,2 +1,2 @@
-# how-to
-a recopilation of how-tos :)
+# How-To
+A recopilation of how-tos :)
