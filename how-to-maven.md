@@ -10,7 +10,7 @@ python
 
     tar -xzvf apache-maven-3.9.6-bin.tar.gz
 
-Move Maven to a suitable directory:
+**Move Maven to a suitable directory:**
 After extracting, move the Maven folder to a location of your choice. You can move it to /usr/local or /opt directory. For example:
 
 bash
@@ -31,13 +31,14 @@ bash
     export M2_HOME=/usr/local/apache-maven-3.9.6
     export PATH=$M2_HOME/bin:$PATH
 
-Save the file and exit the text editor. Then, run the following command to apply the changes:
+**Save** the file and exit the text editor. Then, **run the following command** to apply the changes:
 
 bash
 
     source ~/.bash_profile
 
-Verify installation:
+**Verify installation:**
+
 Open a new Terminal window and run the following command to verify that Maven is installed correctly:
 
     mvn -v
