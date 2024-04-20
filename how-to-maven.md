@@ -22,7 +22,7 @@ Open the .bash_profile or .bashrc file in your home directory using a text edito
 
 bash
 
-    nano ~/.bash_profile
+    vi ~/.bash_profile
 
 Add the following lines to the file:
 
