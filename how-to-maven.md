@@ -1,4 +1,4 @@
-# #Manually install Apache Maven on a Mac (without using Homebrew)#
+# Manually install Apache Maven on a Mac (without using Homebrew)
 
 **Download Apache Maven:**
 Go to the Apache Maven download page and download the latest version of Maven. Choose the binary tar.gz file (e.g., apache-maven-3.8.4-bin.tar.gz).
