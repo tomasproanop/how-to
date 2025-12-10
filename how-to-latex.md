@@ -1,14 +1,16 @@
 When working with more complex documents, some errors showed up in my setup, so I wanted to make a quick guide to remember this in the future 
 and maybe someone can benefit from this, too.
 
-I use TeXShop Version 5.54 (on macOS) and have pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2025) installed in this path: /Library/TeX/texbin/pdflatex
+I am using TeXShop Version 5.54 (on macOS) and have pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2025) installed in this path: /Library/TeX/texbin/pdflatex
 
 - Problem: Missing packages. 
 - Solution: Install them via Terminal: 
 
 In my case: 
 
-# Install the missing packages
+```console
+#Install the missing packages:
+
 sudo tlmgr install koma-script
 sudo tlmgr install blindtext
 sudo tlmgr install imakeidx
@@ -22,6 +24,8 @@ sudo tlmgr install biblatex
 sudo tlmgr install biblatex
 sudo tlmgr install verbatimbox
 sudo tlmgr install subfigure  
+```
+
 
 etc.
 
@@ -38,5 +42,24 @@ Alternate Path: ~/bin/context/tex/texmf-osx-arm64/bin (default)
 
 Now it is possible to typeset the document :)
 
+PS: Useful commands: 
 
+```console
+# check which pdflatex is being used
+which pdflatex
+
+# check the version
+pdflatex --version
+
+# list available TeX distributions
+ls /usr/local/texlive/
+
+# check if a package is found
+kpsewhich scrhack.sty
+kpsewhich blindtext.sty
+kpsewhich biblatex.sty
+
+# reset TeXshop preferences
+defaults delete TeXShop
+```
 
